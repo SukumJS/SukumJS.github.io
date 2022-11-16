@@ -1,0 +1,58 @@
+.container {
+  padding: 80px; /*เว้นโครงด้านนอก*/
+  background-image: linear-gradient(
+      to right,
+      rgb(72, 72, 72),
+      rgba(159, 158, 158, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+.bar {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.content {
+  font-family: "Kanit", sans-serif;
+}
+
+#avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 32px; /*เว้นช่วง*/
+  object-fit: cover; /*ปรับรูปให้พอดีถ้ารูปไม่ใช่จัตุรัส*/
+  box-shadow: 10px 10px 0px 0px;
+}
+
+.name {
+  font-size: 48px;
+  font: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 4px;
+  }
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+}
