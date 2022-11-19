@@ -1,28 +1,17 @@
 .container {
-  padding: 80px; /*เว้นโครงด้านนอก*/
-  background-image: linear-gradient(
-      to right,
+  padding: 40px;
+  background-image: linear-gradient(to right,
       rgb(72, 72, 72),
-      rgba(159, 158, 158, 0.5)
-    ),
+      rgba(159, 158, 158, 0.5)),
     url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 48px;
-  }
-}
-
-.bar {
-  color: white;
-  margin-bottom: 40px;
-}
 
 .content {
   font-family: "Kanit", sans-serif;
+  font-size: 20px;
 }
 
 #avatar {
@@ -31,28 +20,128 @@
   border-radius: 50%;
   border-style: solid;
   border-color: black;
-  margin-bottom: 32px; /*เว้นช่วง*/
-  object-fit: cover; /*ปรับรูปให้พอดีถ้ารูปไม่ใช่จัตุรัส*/
+  margin-bottom: 32px;
+  /*เว้นช่วง*/
+  object-fit: cover;
+  /*ปรับรูปให้พอดีถ้ารูปไม่ใช่จัตุรัส*/
   box-shadow: 10px 10px 0px 0px;
 }
 
-.name {
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+h1 {
   font-size: 48px;
-  font: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .name {
-    font-size: 4px;
-  }
-}
-
-.contact {
+.grid-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 5px;
+  padding: 10px;
   margin-bottom: 40px;
 }
 
-.button {
-  background-color: black;
+.grid-container-bar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 40px;
+  justify-items: center;
+}
+
+.grid-item {
+  text-decoration: none;
   color: white;
-  padding: 12px 24px;
+  font-size: 30px;
+  padding: 20px;
+  width: 100%;
+  justify-items: center;
+}
+
+.activity-folder {
+  font-size: 250px;
+  color: white;
+  text-align: right;
+  top: 30%;
+  left: 50%;
+  padding: 20px 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: auto;
+    gap: 5px;
+    padding: 5px;
+    margin-bottom: 40px;
+    display: grid;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .grid-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  .activity-folder {
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 175px;
+  }
+}
+
+
+.bar {
+  text-align: center;
+  background-color: magenta;
+  border-radius: 100px;
+  max-width: 200px;
+}
+
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  text-align: center;
+  color: black;
+}
+
+.contact-icon {
+  margin-right: 20px;
+}
+
+
+
+
+#project {
+  width: 30%;
+}
+
+#info {
+  width: 65%;
+}
+
+.act {
+  text-align: center;
 }
