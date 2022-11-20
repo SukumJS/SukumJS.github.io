@@ -47,6 +47,8 @@ h1 {
   gap: 5px;
   padding: 10px;
   margin-bottom: 40px;
+  background-color: rgba(159, 158, 158, 0.2);
+  border-radius: 20px;
 }
 
 .grid-container-bar {
@@ -76,6 +78,7 @@ h1 {
   padding: 20px 50px;
 }
 
+
 @media screen and (max-width: 1200px) {
   .grid-container {
     grid-template-columns: auto;
@@ -99,7 +102,9 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    background-color: rgba(159, 158, 158, 0.5);
   }
+
 
   .activity-folder {
     text-align: center;
@@ -111,7 +116,7 @@ h1 {
 
 .bar {
   text-align: center;
-  background-color: magenta;
+  background-color: rgb(248, 219, 82);
   border-radius: 100px;
   max-width: 200px;
 }
@@ -143,5 +148,9 @@ h1 {
 }
 
 .act {
+  text-align: center;
+}
+
+.game {
   text-align: center;
 }
