@@ -20,30 +20,44 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="grid-container-bar">
+                <div id="navbar" class="grid-container-bar">
                     <div class="grid-item bar">Home</div>
-                    <div class="grid-item bar">Contact</div>
+                    <div  class="grid-item bar">Contact</div>
                 </div>
                 <img id="avatar" src="images/avatar.jpg" alt="my avatar" width="100px" class="center"/>
                 <h1>hello</h1>
                 <div class="grid-container">
                     <div class="grid-item" >
-                        <i class="fa-solid fa-envelope contact-icon"></i>email : Sukumpat2547@gmail.com<br>
-                        <i class="fa-brands fa-github contact-icon"></i>github : sukumJS <br>
-                        <i class="fa-brands fa-facebook contact-icon"></i>facebook : Palm PM <br>
+                        <i class="fa-solid fa-envelope contact-icon"></i><a href="https://github.com/SukumJS">email : Sukumpat2547@gmail.com</a><br>
+                        <i class="fa-brands fa-github contact-icon"></i><a href="https://github.com/SukumJS">github : SukumJS</a><br>
+                        <i class="fa-brands fa-facebook contact-icon"></i><a href="https://www.facebook.com/palm.pm.71">facebook : Palm PM </a><br>
                         <i class="fa-solid fa-phone contact-icon"></i>call : 096-880-3958 <br>
-                        <i class="fa-brands fa-line contact-icon"></i>line id : palm12305sa
+                        <i class="fa-brands fa-line contact-icon"></i><a href="https://line.me/ti/p/ZM5RmeoLbS">line id : palm12305sa</a>
                     </div>
                     <div class="grid-item" >
-                        <a href="#"><i class="fa-solid fa-folder-open activity-folder "></i></a>
-                        <div class="act"><a href="#" style="color: white;">Activity</a></div>
+                        <a href="timeline.html"><i class="fa-solid fa-folder-open activity-folder "></i></a>
+                        <div class="act"><a href="timeline.html" >Activity</a></div>
                     </div>
-                    <div class="grid-item game" ><a href="project.html" style="color: white; background-color:rgba(248, 219, 82,0.2); border-radius: 10px;">View my game</a></div>
-                    <div class="grid-item" ><a href="#"><i class="fa-solid fa-address-book activity-folder "></i></a>
-                    <div class="act"><a href="#" style="color: white;">Certificate</a></div>
+                    <div class="grid-item game" ><a href="project.html" style="background-color:rgba(248, 219, 82,0.2); border-radius: 10px;">View my game</a></div>
+                    <div class="grid-item" ><a href="certificate.html"><i class="fa-solid fa-address-book activity-folder "></i></a>
+                    <div class="act"><a href="certificate.html">Certificate</a></div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>    
     </body>
 </html>
