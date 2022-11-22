@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: '1+1=?',
+        question: './images/avatar.jpg',
         choice1: '2',
         choice2: '4',
         choice3: '5',
@@ -68,7 +68,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex]
-    question.innerText = currentQuestion.question
+    question.src = currentQuestion.question
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
