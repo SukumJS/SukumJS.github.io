@@ -9,6 +9,13 @@ body {
     background: #2e364a;
 }
 
+.headline {
+    font-size: 10vmin;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -138,6 +145,10 @@ body {
     margin-bottom: 15px;
 }
 
+.pad {
+    padding-top: 30px;
+}
+
 @media screen and (max-width: 850px) {
 
     .container {
@@ -147,7 +158,27 @@ body {
     }
 
     .text-box {
-        font-size: 13px;
+        font-size: 10px;
+
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: -20px;
+    }
+
+    .text-box {
+        font-size: 6px;
+        padding: 10px 15px;
 
     }
 

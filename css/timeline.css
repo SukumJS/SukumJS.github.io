@@ -9,6 +9,13 @@ body {
     background: #2e364a;
 }
 
+.headline {
+    font-size: 100px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
 .timeline {
     position: relative;
     max-width: 1200px;

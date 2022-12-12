@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: './images/avatar.jpg',
+        question: '../images/ch1-01.jpg',
         choice1: '2',
         choice2: '4',
         choice3: '5',
@@ -20,23 +20,23 @@ let questions = [
         answer: 1,
     },
     {
-        question: '1+2=?',
+        question: '../images/thcu.jpg',
         choice1: '2',
-        choice2: '4',
+        choice2: '5',
         choice3: '5',
         choice4: '6',
         answer: 1,
     },
     {
-        question: '1+1=?',
+        question: '../images/siit.jpg',
         choice1: '2',
         choice2: '4',
-        choice3: '5',
+        choice3: '6',
         choice4: '6',
         answer: 1,
     },
     {
-        question: '1+1=?',
+        question: '../images/dekd.jpg',
         choice1: '2',
         choice2: '4',
         choice3: '5',
@@ -66,15 +66,16 @@ getNewQuestion = () => {
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionIndex]
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    console.log("Question: " + questionsIndex)
+    currentQuestion = availableQuestions[questionsIndex]
     question.src = currentQuestion.question
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
     })
-    availableQuestions.splice(questionIndex, 1)
+    availableQuestions.splice(questionsIndex, 1)
     acceptingAnswers = true
 }
 

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Sukumport</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap"
+        rel="stylesheet"/>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+    
+    </head>
+    <body>        
+            <div class="content">
+                <div id="navbar" class="grid-container-bar">
+                    <button class="grid-item bar"><div><a href="index.html">Home</div></a></button>
+                    <button  class="grid-item bar"><div>Contact</div></button>
+                </div>
+                <div style="text-align: center;" class="grid-contact" >
+                    <i class="fa-solid fa-envelope contact-icon"></i><a href="https://github.com/SukumJS">email : Sukumpat2547@gmail.com</a><br>
+                    <i class="fa-brands fa-github contact-icon"></i><a href="https://github.com/SukumJS">github : SukumJS</a><br>
+                    <i class="fa-brands fa-facebook contact-icon"></i><a href="https://www.facebook.com/palm.pm.71">facebook : Palm PM </a><br>
+                    <i class="fa-solid fa-phone contact-icon"></i>call : 096-880-3958 <br>
+                    <i class="fa-brands fa-line contact-icon"></i><a href="https://line.me/ti/p/ZM5RmeoLbS">line id : palm12305sa</a>
+                </div>
+            </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+             <script>
+             $(".Click-here").on('click', function() {
+               $(".custom-model-main").addClass('model-open');
+             }); 
+             $(".close-btn, .bg-overlay").click(function(){
+               $(".custom-model-main").removeClass('model-open');
+             });
+             </script>
+    </body>
+</html>
