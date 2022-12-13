@@ -60,7 +60,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('../end.html')
     }
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
@@ -69,7 +69,7 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     console.log("Question: " + questionsIndex)
     currentQuestion = availableQuestions[questionsIndex]
-    question.src = currentQuestion.question
+    question.innerText = currentQuestion.question
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
