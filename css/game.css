@@ -69,9 +69,16 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .choice-container {
         min-width: 40rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .choice-container {
+        min-width: 32rem;
     }
 
 }

@@ -1,0 +1,36 @@
+{
+    "batch1": [
+        {
+            "question": "../images/ch1-01.jpg",
+            "choice1": "2",
+            "choice2": "4",
+            "choice3": "5",
+            "choice4": "6",
+            "answer": 1
+        },
+        {
+            "question": "../images/thcu.jpg",
+            "choice1": "2",
+            "choice2": "5",
+            "choice3": "5",
+            "choice4": "6",
+            "answer": 1
+        },
+        {
+            "question": "../images/siit.jpg",
+            "choice1": "2",
+            "choice2": "4",
+            "choice3": "6",
+            "choice4": "6",
+            "answer": 1
+        },
+        {
+            "question": "../images/dekd.jpg",
+            "choice1": "2",
+            "choice2": "4",
+            "choice3": "5",
+            "choice4": "6",
+            "answer": 1
+        }
+    ]
+}

@@ -27,6 +27,7 @@ body {
     max-width: 500px;
     position: relative;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .center {
@@ -50,12 +51,15 @@ body {
     0% {
         opacity: 1;
         transform: translateY(-30px);
+        transition: all 1s;
     }
 
     100% {
         opacity: 1;
         transform: translateY(0px);
+        transition: opacity 0.3s ease-in;
     }
+
 }
 
 .container:nth-child(1) {

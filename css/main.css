@@ -47,6 +47,7 @@ html {
 
 
 h1 {
+  color: #fff;
   font-size: 48px;
   margin-bottom: 40px;
   text-align: center;
@@ -58,22 +59,27 @@ h1 {
 }
 
 .bar {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 30px;
   text-align: center;
   background-color: rgb(248, 219, 82);
-  border-radius: 100px;
-  max-width: 200px;
-  cursor: pointer;
+  border-radius: 50px;
+  min-width: 200px;
+  text-decoration: none;
 }
 
 .bar:hover {
   transition: background-image 3s ease-in-out;
+  transition: transform 150ms;
+  transform: scale(1.03);
+  cursor: pointer;
   background-image: linear-gradient(90deg, #fee140 0%, #ffad96 100%);
 }
 
 .grid-container-bar {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 10px;
   padding: 10px;
   margin-bottom: 40px;
   justify-items: center;
@@ -102,6 +108,7 @@ h1 {
   padding: 20px;
   width: 100%;
   justify-items: center;
+  background-color: rgba(159, 158, 158, 0.5);
 
 }
 
@@ -116,7 +123,7 @@ h1 {
   text-overflow: ellipsis;
   text-align: center;
   background-color: rgba(159, 158, 158, 0.5);
-  margin-top: 250px;
+  margin-top: 100px;
 
 }
 
@@ -207,10 +214,15 @@ a:active {
   }
 
   .bar {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
     text-align: center;
-    border-radius: 100px;
-    max-width: 200px;
     background-color: rgb(248, 219, 82);
+    border-radius: 50px;
+    min-width: 200px;
+    text-decoration: none;
+
 
   }
 }
@@ -249,11 +261,18 @@ a:active {
   }
 
   .bar {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
     text-align: center;
-    border-radius: 100px;
-    max-width: 100px;
-    font-size: 15px;
     background-color: rgb(248, 219, 82);
+    border-radius: 40px;
+    min-width: 125px;
+    text-decoration: none;
+  }
+
+  .grid-contact {
+    font-size: 18px;
   }
 }
 
