@@ -122,7 +122,7 @@ btn[disabled]:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, auto);
+    grid-template-columns: repeat(5, auto);
     background-color: #005194;
     padding: 10px;
     column-gap: 15px;

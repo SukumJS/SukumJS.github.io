@@ -35,6 +35,10 @@ h2 {
     padding: 2rem;
 }
 
+.choice-text {
+    margin-left: 3rem;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
