@@ -1,3 +1,4 @@
+const image = document.querySelector('#image');
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -11,16 +12,39 @@ let questionCounter = 0
 let availableQuestions = []
 
 let questions = [
+
     {
-        question: 'ใส่ตรงนี้',
-        choice1: 'ใส่ตรงนี้',
-        choice2: 'ใส่ตรงนี้',
-        choice3: 'ใส่ตรงนี้',
-        choice4: 'ใส่ตรงนี้',
+        question: '1265 1049 8213 ........ ',
+        choice1: '6417 ',
+        choice2: '6415 ',
+        choice3: '649 ',
+        choice4: '6017 ',
+        answer: 4,
+    },
+    {
+        question: '2 7 7 6 9 21 14 12 ........ ',
+        choice1: '16 ',
+        choice2: '26 ',
+        choice3: '33 ',
+        choice4: '63 ',
+        answer: 4,
+    },
+    {
+        question: '13 22 20 31 28 42 ........ ',
+        choice1: '32 ',
+        choice2: '34 ',
+        choice3: '36 ',
+        choice4: '38 ',
+        answer: 2,
+    },
+    {
+        question: '122 61 64 32 36 18 ........ ',
+        choice1: '23 ',
+        choice2: '24 ',
+        choice3: '25 ',
+        choice4: '26 ',
         answer: 1,
     },
-
-
 ]
 
 const SCORE_POINTS = 100
@@ -37,7 +61,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('../end.html')
+        return window.location.assign('end.html')
     }
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
@@ -46,11 +70,24 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     console.log("Question: " + questionsIndex)
     currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question
+    if ('question' in currentQuestion) {
+        question.innerHTML = currentQuestion.question
+    } else {
+        question.innerHTML = "";
+    }
+    if ('image' in currentQuestion) {
+        image.src = currentQuestion.image
+    } else {
+        image.src = "";
+    }
 
     choices.forEach(choice => {
         const number = choice.dataset['number']
+        choice.style.display = 'block'
         choice.innerText = currentQuestion['choice' + number]
+        if (currentQuestion['choice' + number] == undefined) {
+            choice.style.display = 'none'
+        }
     })
     availableQuestions.splice(questionsIndex, 1)
     acceptingAnswers = true
@@ -76,7 +113,7 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
-        }, 2000)
+        }, 1500)
     })
 })
 

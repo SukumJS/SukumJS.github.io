@@ -2,6 +2,17 @@ body {
     color: white;
 }
 
+#question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#image {
+    max-width: 500px;
+    margin-bottom: 20px;
+
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
@@ -42,6 +53,7 @@ body {
 #hud {
     display: flex;
     justify-content: space-between;
+
 }
 
 .hud-prefix {
@@ -51,6 +63,7 @@ body {
 
 .hud-main-text {
     text-align: center;
+
 }
 
 #progressBar {
@@ -74,11 +87,28 @@ body {
         min-width: 40rem;
     }
 
+    #question {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     .choice-container {
         min-width: 32rem;
     }
+
+    #question {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    #image {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+
 
 }
