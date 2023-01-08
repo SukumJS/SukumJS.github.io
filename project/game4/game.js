@@ -14,15 +14,15 @@ let availableQuestions = []
 let questions = [
     {
         image: 'img/11.jpg',
-        question: ' ภาพ figure ควรอยู่ set ใด',
-        choice1: ' set A',
+        question: 'ภาพ figure ควรอยู่ set ใด',
+        choice1: 'set A',
         choice2: 'set B',
         choice3: 'ไม่อยู่เซตใดเลย',
         answer: 1,
     },
     {
         image: 'img/12.jpg',
-        question: ' ภาพ figure ควรอยู่ set ใด',
+        question: 'ภาพ figure ควรอยู่ set ใด',
         choice1: ' set A',
         choice2: 'set B',
         choice3: 'ไม่อยู่เซตใดเลย',

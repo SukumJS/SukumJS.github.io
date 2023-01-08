@@ -150,6 +150,14 @@ btn[disabled]:hover {
 
 }
 
+/* result*/
+.pdf {
+    width: 600px;
+    height: 500px;
+    margin-bottom: 20px;
+
+}
+
 @media screen and (max-width: 900px) {
     h1 {
         font-size: 4rem;
@@ -187,7 +195,12 @@ btn[disabled]:hover {
     .grid-item {
         font-size: 15px;
         padding: 10px 15px;
+    }
 
+    .pdf {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 20px;
 
     }
 }

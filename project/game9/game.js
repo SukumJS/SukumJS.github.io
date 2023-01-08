@@ -14,89 +14,41 @@ let availableQuestions = []
 let questions = [
 
     {
-        image: 'img/11.jpg',
-        question: 'ภาพ figure ควรอยู่ set ใด',
-        choice1: 'set A',
-        choice2: 'set B',
-        choice3: 'ไม่อยู่เซตใดเลย',
-        answer: 1,
-    },
-    {
-        image: 'img/12.jpg',
-        question: 'ภาพ figure ควรอยู่ set ใด',
-        choice1: 'set A',
-        choice2: 'set B',
-        choice3: 'ไม่อยู่เซตใดเลย',
-        answer: 3,
-    },
-    {
-        question: '3 14 7 45 15 124 31 ..........',
-        choice1: '120',
-        choice2: '140',
-        choice3: '160 ',
-        choice4: '315',
-        answer: 4,
-    },
-    {
-        question: '1 3 5 7 16 31 59 ..........',
-        choice1: '9',
-        choice2: '81',
-        choice3: '95 ',
-        choice4: '113',
-        answer: 4,
-    },
-    {
-        question: '100 99 95 86 70 ...',
-        choice1: '47',
-        choice2: '45',
-        choice3: '25 ',
-        choice4: '30',
+        question: '16 1,318 35 1,283 59 1,243 88 ........ ',
+        choice1: '147 ',
+        choice2: '1,198 ',
+        choice3: '1,255 ',
+        choice4: '1,331 ',
         answer: 2,
     },
     {
-        question: ' 1 -3 -7 -11 -15 ... ...',
-        choice1: '-11',
-        choice2: '-13',
-        choice3: '-19 ',
-        choice4: '-23',
+        question: '6   -   10  - ' + '\n' +
+            ' -   11  13  - ' + '\n' +
+            '12  -   -   ?' + '\n' +
+            '15  17  -   21',
+        choice1: '22 ',
+        choice2: '20',
+        choice3: '18 ',
+        choice4: '14 ',
         answer: 3,
     },
     {
-        question: ' กาแฟถ้วยนี้..........น่าจะเติมน้ำตาลอีก',
-        choice1: 'หวานจ๋อย  ',
-        choice2: 'หวานหอม',
-        choice3: 'หวานปะแล่ม ๆ ',
-        choice4: 'หวานแหว',
-        answer: 3,
+        question: '100 92 76 44 ... ',
+        choice1: '-20 ',
+        choice2: '-40 ',
+        choice3: '30 ',
+        choice4: '42 ',
+        answer: 1,
+    },
+    {
+        question: '15 25 35 75 135 ... ',
+        choice1: '180 ',
+        choice2: '245 ',
+        choice3: '226 ',
+        choice4: '256 ',
+        answer: 2,
+    },
 
-    },
-    {
-        question: ' ปัญหาทางด้านสิ่งแวดล้อมเป็นปัญหาที่ทุกประเทศทั่วโลกเห็นความสําคัญและกําหนดมาตรการในการ..........' + '\n' +
-            'สิ่งแวดล้อมควบคู่ไปกับการ..........เทคโนโลยีและเศรษฐกิจ',
-        choice1: 'รักษา - ศึกษา  ',
-        choice2: 'ดูแล - ปรับปรุง',
-        choice3: 'อนุรักษ์ - พัฒนา ',
-        choice4: 'ควบคุม - ส่งเสริม',
-        answer: 3,
-    },
-    {
-        question: ' ขณะนี้ตํารวจกําลัง..........เพื่อค้นหาตัวร้ายอยู่',
-        choice1: 'จับ ',
-        choice2: 'สอบถาม',
-        choice3: 'สืบสวน  ',
-        choice4: 'สอบสวน',
-        answer: 3,
-
-    },
-    {
-        question: ' ศิลปหัตถกรรมไทยไม่เคย..........ไปจากแผ่นดินไทย ' + '\n' +
-            'ทั้งนี้เพราะมี..........หลายอย่างมาคอย..........',
-        choice1: 'ขาดแคลน - วิธีการ - ทําให้เป็นไป ',
-        choice2: 'สูญสิ้น - สิ่งกําหนด - กําหนดให้',
-        choice3: 'ตัวการ - สูญหาย - ค้ำประกัน  ',
-        choice4: 'หาย - เหตุผล - สนับสนุน',
-        answer: 4,
-    },
 ]
 
 const SCORE_POINTS = 100

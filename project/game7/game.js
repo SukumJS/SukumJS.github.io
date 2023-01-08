@@ -14,36 +14,40 @@ let availableQuestions = []
 let questions = [
 
     {
-        question: '1265 1049 8213 ........ ',
-        choice1: '6417 ',
-        choice2: '6415 ',
-        choice3: '649 ',
-        choice4: '6017 ',
+        question: '1 2 2 4 3 6 4 8 5 ........ ',
+        choice1: '3 ',
+        choice2: '7 ',
+        choice3: '10 ',
+        choice4: '12 ',
+        answer: 3,
+    },
+    {
+        question: '1 2 6 21 ........ ',
+        choice1: '27 ',
+        choice2: '29 ',
+        choice3: '63 ',
+        choice4: '88 ',
         answer: 4,
     },
     {
-        question: '2 7 7 6 9 21 14 12 ........ ',
-        choice1: '16 ',
-        choice2: '26 ',
-        choice3: '33 ',
-        choice4: '63 ',
-        answer: 4,
-    },
-    {
-        question: '13 22 20 31 28 42 ........ ',
-        choice1: '32 ',
-        choice2: '34 ',
-        choice3: '36 ',
-        choice4: '38 ',
+        question: '316 419 735 616 519 97 716 619 1,335 916 719 ........ ',
+        choice1: '69 ',
+        choice2: '197 ',
+        choice3: '516 ',
+        choice4: '1,635 ',
         answer: 2,
     },
+
     {
-        question: '122 61 64 32 36 18 ........ ',
-        choice1: '23 ',
-        choice2: '24 ',
-        choice3: '25 ',
-        choice4: '26 ',
-        answer: 1,
+        question: '3  4  7   12' + '\n' +
+            '4  6  10  16' + '\n' +
+            '5  8  ?   20' + '\n' +
+            '6  10 16  24 ',
+        choice1: '10 ',
+        choice2: '11 ',
+        choice3: '13 ',
+        choice4: '15 ',
+        answer: 3,
     },
 
 ]

@@ -8,8 +8,11 @@ body {
 }
 
 #image {
+    max-height: 250px;
     max-width: 500px;
     margin-bottom: 20px;
+
+
 
 }
 
@@ -66,6 +69,10 @@ body {
 
 }
 
+.hud-item {
+    max-height: 100px;
+}
+
 #progressBar {
     width: 20rem;
     height: 3rem;
@@ -92,6 +99,34 @@ body {
         margin-bottom: 10px;
     }
 
+    #image {
+        max-height: 200px;
+        max-width: 400px;
+        margin-bottom: 20px;
+
+    }
+
+    #score {
+        font-size: 30px;
+    }
+
+    #progressBar {
+        width: 15rem;
+        height: 2rem;
+        border: 0.2rem solid rgb(11, 223, 36);
+        margin-top: 1rem;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .hud-item {
+        max-height: 100px;
+    }
+
+    .choice-text {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -105,10 +140,26 @@ body {
     }
 
     #image {
-        max-width: 200px;
+        max-height: 175px;
+        max-width: 300px;
         margin-bottom: 20px;
     }
 
+    #score {
+        font-size: 30px;
+    }
 
+    #progressBar {
+        width: 15rem;
+        height: 2rem;
+        border: 0.2rem solid rgb(11, 223, 36);
+        margin-top: 1rem;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .hud-item {
+        max-height: 100px;
+    }
 
 }
