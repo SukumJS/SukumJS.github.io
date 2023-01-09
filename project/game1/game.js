@@ -142,8 +142,10 @@ getNewQuestion = () => {
     }
     if ('image' in currentQuestion) {
         image.src = currentQuestion.image
+        image.style.display = 'block'
     } else {
         image.src = "";
+        image.style.display = 'none'
     }
 
     choices.forEach(choice => {
