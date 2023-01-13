@@ -89,7 +89,7 @@ img {
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: rgb(28, 26, 26);
+    color: #fff;
     background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
     border: 4px;
 }
