@@ -68,6 +68,43 @@ let questions = [
         choice5: '5',
         answer: 3,
     },
+    {
+        image: 'img/21.jpg',
+        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
+        choice5: '5',
+        answer: 3,
+    },
+    {
+        image: 'img/22.jpg',
+        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
+        choice5: '5',
+        answer: 3,
+    },
+    {
+        image: 'img/23.jpg',
+        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
+        choice5: '5',
+        answer: 1,
+    },
+    {
+        image: 'img/23.jpg',
+        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
+        choice5: '5',
+        answer: 5,
+    },
+
 
 
 ]
